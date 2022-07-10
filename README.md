@@ -8,7 +8,7 @@ An app created to make viewing / editing the arkshop config easier.
 #### Quickly find blueprints using the search and filter features.
 
 ### **View**
-#### Allows the user to view the settings, shop, and kit in a reader friendly way.
+#### Allows the user to easily view the settings, shop entries, and kits.
 
 ### **Edit**
 #### Easily lets the user edit existing settings, shop entries, and kits.
