@@ -1,0 +1,103 @@
+.btn-add {
+  border-radius: 3px;
+  padding: 0;
+  margin: 0;
+  line-height: 0.8rem;
+  font-size: 0.7rem;
+  background-color: rgb(41, 77, 45);
+  color:white;
+}
+.btn-add:hover {
+  color:white;
+  background-color: rgb(2, 110, 16);
+}
+
+.btn-edit {
+  float:right;
+  border-radius: 3px;
+  padding: 0;
+  margin: 0 0.25rem;
+  line-height: 0.8rem;
+  font-size: 0.7rem;
+  background-color: rgb(41, 77, 45);
+  color:white;
+}
+.btn-edit:hover {
+  color:white;
+  background-color: rgb(2, 110, 16);
+}
+
+.btn-remove {
+  float:right;
+  border-radius: 3px;
+  padding: 0;
+  margin: 0 0.25rem;
+  line-height: 0.8rem;
+  font-size: 0.7rem;
+  background-color: rgb(70, 25, 25);
+  color:white;
+
+}
+
+.btn-remove:hover {
+  color:white;
+  background-color: rgb(255, 1, 1);
+}
+
+.btn-view {
+  border-radius: 3px;
+  padding: 0;
+  margin: 0 0.25rem 0 0.25rem;
+  line-height: 0.8rem;
+  font-size: 0.7rem;
+  background-color: rgb(45, 45, 45);
+  color:white;
+}
+
+.btn-view:hover {
+  color:white;
+  background-color: rgb(75, 75, 75);
+}
+
+.itemCount {
+  color: black;
+  padding:0.1rem 0.5rem 0.1rem 0.5rem;
+}
+
+.itemEdit {
+  max-width: 300px;
+  width: fit-content;
+}
+
+.objectList {
+  margin: 0;
+  padding: 0 0 0 0.5rem;
+  max-height: 250px;
+  max-width: 250px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.shoplist {
+  max-height: 500px;
+  max-width: 165px;
+  min-width: 165px;
+  overflow-y: auto;
+  cursor: pointer;
+}
+
+.viewlist {
+  height: 450px;
+  max-width: 300px;
+  min-width: 300px;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.width-fit {
+  padding: 0;
+  margin: 0;
+  width:fit-content;
+  max-width: fit-content;
+  min-width: fit-content;
+}

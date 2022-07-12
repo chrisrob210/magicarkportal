@@ -1,0 +1,11 @@
+[{
+        "title": "Home",
+        "app": "<App />",
+        "isActive": true
+    },
+    {
+        "title": "Shop",
+        "app": "<Shop />",
+        "isActive": false
+    }
+]
