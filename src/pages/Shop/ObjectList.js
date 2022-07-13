@@ -1,6 +1,6 @@
 import React from 'react'
-import Button from '../../Button'
-import { getNameByBlueprint, correctBlueprint } from './bplist'
+import Button from '../../components/Button'
+import { getNameByBlueprint, correctBlueprint } from '../../utils/bplist'
 
 export default function ObjectList(props) {
     let list = getValue(props.obj)

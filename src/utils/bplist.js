@@ -1,4 +1,4 @@
-import bps from './bp.json'
+import bps from '../data/bp.json'
 
 function getNameByBlueprint(blueprint){
     let bp = null

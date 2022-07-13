@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import Input from '../../Input';
+import Input from '../../components/Input';
 import ObjectList from './ObjectList';
 
-export default function ShopEdit(props) {
+export default function Edit(props) {
     let item = props.item
     let objList = []
 

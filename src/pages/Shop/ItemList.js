@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import config from './config.json'
-import ShopItem from './ShopItem'
+import config from '../../data/config.json'
+import ListItem from './ListItem'
 
 const shop = config.Kits.ShopItems
 const className =  "col-2 list-group list-group-flush shoplist border"
 let id = ""
-export default function ShopList(props) {
+export default function ItemList(props) {
     
     const [list, setList] = useState(updateList(shop, id))
     function updateList(newShop, id){
@@ -13,10 +13,10 @@ export default function ShopList(props) {
     let list = []
     shopKeys.forEach((key, index) => {
         if (!(key === id)){
-            list.push(<ShopItem className='list-group-item list-group-item-action' key={index} id={key} name={key} isActive={false} onClick={handleClick}/>)
+            list.push(<ListItem className='list-group-item list-group-item-action' key={index} id={key} name={key} isActive={false} onClick={handleClick}/>)
         }
         else {
-            list.push(<ShopItem className='list-group-item list-group-item-action' key={index} id={key} name={key} isActive={true} onClick={handleClick}/>)
+            list.push(<ListItem className='list-group-item list-group-item-action' key={index} id={key} name={key} isActive={true} onClick={handleClick}/>)
         }
     })
     return list

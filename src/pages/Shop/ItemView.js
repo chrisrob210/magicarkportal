@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import Value from './Value'
 import ObjectList from './ObjectList'
-import Button from '../../Button'
+import Button from '../../components/Button'
 const className =  "col-2 list-group list-group-flush viewlist border"
 
-export default function ShopView(props) {
+export default function ItemView(props) {
   let buttonIsVisible = false
   let item = props.item
   let itemName = props.name

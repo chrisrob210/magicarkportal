@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import ShopList from './ShopList'
-import ShopView from './ShopView'
-import ShopEdit from './ShopEdit'
+import ItemList from './ItemList'
+import ItemView from './ItemView'
+import Edit from './Edit'
 
 export default function Shop(props) {
   const [item, setItem] = useState({})
@@ -35,9 +35,9 @@ export default function Shop(props) {
         <section className="w-auto m-0 p-3">
             <h3>Shop Entry Editor</h3>
             <div className="row">
-            <ShopList setView={setViewItem} addItem={addItem}/>
-            <ShopView item={item} name={itemName} onClick={editItemList} editItem={editItem}/>
-            <ShopEdit item={itemEdit}/>
+            <ItemList setView={setViewItem} addItem={addItem}/>
+            <ItemView item={item} name={itemName} onClick={editItemList} editItem={editItem}/>
+            <Edit item={itemEdit}/>
             </div>
         </section>
     </div>
