@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Main(props) {
+const Home = () => {
   return (
     <div className="container-fluid w-75 m-0 p-2 mx-auto bg-light">
         <section className="entry w-auto m-0 p-3">
@@ -10,3 +10,5 @@ export default function Main(props) {
     </div>
   )
 }
+
+export default Home;

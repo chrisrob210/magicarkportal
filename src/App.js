@@ -1,36 +1,21 @@
-import React,{ useState } from 'react';
+import React from 'react';
 import './App.css';
-import NavBar from './components/nav/NavBar';
-import Shop from './pages/Shop/Shop';
-import Main from './pages/Main';
+import Navbar from './components/Navbar';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+// Pages
+import Home from './pages';
+import Shop from './pages/shop';
 
-function App(props) {
-  const [content, setContent] = useState(<Main/>)
-  
-  function setPage(page){
-    // if (page === "Shop")
-    //   setContent(<Shop title="Shop Entry Creator"/>)  
-    // else 
-    //   setContent(<Main title="Main Page"/>)
-    switch(page){
-      case "Shop":
-          setContent(<Shop/>)
-          break
-      case "Home":
-          setContent(<Main/>)
-          break
-      default: 
-          setContent(<Main/>)
-          break
-    }
-  }
-
-  return (
-    <div>
-      <NavBar setPage={setPage}/>
-      {content}
-    </div>
-  );
+function App() {
+return (
+	<Router>
+	<Navbar />
+	<Routes>
+		<Route path='/' element={<Home />} />
+		<Route path='/shop' element={<Shop/>} />
+	</Routes>
+	</Router>
+);
 }
 
 export default App;

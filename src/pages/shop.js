@@ -1,16 +1,15 @@
 import React, { useState } from 'react'
-import ItemList from './ItemList'
-import ItemView from './ItemView'
-import Edit from './Edit'
+import ItemList from './Shop/ItemList'
+import ItemView from './Shop/ItemView'
+import Edit from './Shop/Edit'
 
-export default function Shop(props) {
+const Shop = (props) => {
   const [item, setItem] = useState({})
   const [itemName, setItemName] = useState("")
   const [itemEdit, setItemEdit] = useState({})
   let shopEditIsVisible = false
 
   function setViewItem(shopItem, name){
-    console.log(shopItem);
     setItem(shopItem)
     setItemName(name)
     setItemEdit({})
@@ -43,3 +42,5 @@ export default function Shop(props) {
     </div>
   )
 }
+
+export default Shop;
